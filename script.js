@@ -72,3 +72,53 @@ function readStatus (index) {
     return library[index].readingStatus
 }
 console.log(readingStatus(2)); 
+
+//task 5 
+var cart = [ 
+    {
+        name: 'Shoes',
+        price: 560,
+        quantity: 4
+    },
+    {
+        name: 'Regular Tees',
+        price: 455.50,
+        quantity: 6
+    },
+    {
+        name: 'Socks',
+        price: 65.99,
+        quantity: 2
+    }];
+
+    var object = {
+        name: 'Clothes',
+        price: 50.5, 
+        quantity: 10
+    }
+
+    additem (object); 
+
+    function additem (item) {
+    cart.push(item); 
+    }
+
+    console.log(cart);
+
+    //Sorting 
+
+    function compare( a ,b ) {
+        if ( a[keyname] < b[keyname] ){
+          return -1;
+        }
+        if ( a[keyname] > b[keyname] ){
+          return 1;
+        }
+        return 0;
+      }
+
+    function sortCart (keyname){
+        if ( compare (cart[0],cart[1]) = true)  
+        compare (cart[1],cart[2]) ;
+        
+    }
