@@ -33,3 +33,20 @@ function arraySum (arr) {
 }
 var sum = arraySum([1,2,3]); 
 console.log(sum); 
+
+//task 3 
+
+/*
+function validEmail (email) {
+    /.com/.test(email); 
+    return true; 
+}
+var emailAddress = validEmail('ashrafraneem@gmail.com'); 
+    console.log(emailAddress);
+    */
+
+function validEmail (email) {
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ; 
+}
+console.log(validEmail("asdad")); 
+console.log(validEmail("ashrafraneem@gmail.com"));
